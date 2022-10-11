@@ -80,6 +80,19 @@ namespace Test7.Controllers
             return HttpStatusCode.OK;
         }
 
+        [HttpDelete("DeleteUser/{Id}")]
+        public async Task<HttpStatusCode> DeleteUser(int Id)
+        {
+            var entity = new User()
+            {
+                Id = Id
+            };
+            Db1Context.Users.Attach(entity);
+            Db1Context.Users.Remove(entity);
+            await Db1Context.SaveChangesAsync();
+            return HttpStatusCode.OK;
+        }
+
 
     }
 }
