@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/saif-ul.hussain/Projects/Test7/Test7.csproj": {}
+    "/Users/saif-ul.hussain/Projects/mysql-entity-framework-database-first/Test7.csproj": {}
   },
   "projects": {
-    "/Users/saif-ul.hussain/Projects/Test7/Test7.csproj": {
+    "/Users/saif-ul.hussain/Projects/mysql-entity-framework-database-first/Test7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/saif-ul.hussain/Projects/Test7/Test7.csproj",
+        "projectUniqueName": "/Users/saif-ul.hussain/Projects/mysql-entity-framework-database-first/Test7.csproj",
         "projectName": "Test7",
-        "projectPath": "/Users/saif-ul.hussain/Projects/Test7/Test7.csproj",
+        "projectPath": "/Users/saif-ul.hussain/Projects/mysql-entity-framework-database-first/Test7.csproj",
         "packagesPath": "/Users/saif-ul.hussain/.nuget/packages/",
-        "outputPath": "/Users/saif-ul.hussain/Projects/Test7/obj/",
+        "outputPath": "/Users/saif-ul.hussain/Projects/mysql-entity-framework-database-first/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/saif-ul.hussain/.nuget/NuGet/NuGet.Config"

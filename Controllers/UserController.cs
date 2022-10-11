@@ -38,5 +38,24 @@ namespace Test7.Controllers
             }
         }
 
+        [HttpGet("GetUserById")]
+        public async Task<ActionResult<UserDTO>> GetUserById(int Id)
+        {
+            UserDTO User = await Db1Context.Users.Select(s => new UserDTO
+            {
+                Id = s.Id,
+                FirstName = s.FirstName,
+                LastName = s.LastName,
+            }).FirstOrDefaultAsync(s => s.Id == Id);
+            if (User == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return User;
+            }
+        }
+
     }
 }
