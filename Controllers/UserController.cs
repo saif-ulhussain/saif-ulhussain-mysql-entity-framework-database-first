@@ -57,5 +57,18 @@ namespace Test7.Controllers
             }
         }
 
+        [HttpPost("CreateUser")]
+        public async Task<HttpStatusCode> CreateUser(UserDTO User)
+        {
+            var entity = new User()
+            {
+                FirstName = User.FirstName,
+                LastName = User.LastName
+            };
+            Db1Context.Users.Add(entity);
+            await Db1Context.SaveChangesAsync();
+            return HttpStatusCode.Created;
+        }
+
     }
 }
