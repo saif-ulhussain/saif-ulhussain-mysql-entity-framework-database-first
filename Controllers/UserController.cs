@@ -70,5 +70,16 @@ namespace Test7.Controllers
             return HttpStatusCode.Created;
         }
 
+        [HttpPut("UpdateUser")]
+        public async Task<HttpStatusCode> UpdateUser(UserDTO User)
+        {
+            var entity = await Db1Context.Users.FirstOrDefaultAsync(s => s.Id == User.Id);
+            entity.FirstName = User.FirstName;
+            entity.LastName = User.LastName;
+            await Db1Context.SaveChangesAsync();
+            return HttpStatusCode.OK;
+        }
+
+
     }
 }
